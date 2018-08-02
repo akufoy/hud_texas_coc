@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>  
+  <script src="//d3js.org/topojson.v1.min.js"></script>
+</head>
+<body>
+  <script>
+    d3.json("TX_503.json", function(error, data) {
+    if (error) return console.error(error);
+    console.log(data);
+    });
+  </script>
+</body>
+</html>
