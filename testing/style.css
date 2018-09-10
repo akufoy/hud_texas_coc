@@ -1,0 +1,17 @@
+.county-boundary {
+    stroke: white;
+    stroke-width: 0.2;
+    z-index: -1;
+}
+
+.coc {
+    stroke: red;
+    stroke-width: 1;
+    z-index: 10;
+}
+
+.test {
+    stroke: red;
+    stroke-width: 1;
+    z-index: 10;
+}
