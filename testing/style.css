@@ -16,3 +16,11 @@
 .ring {
     fill: none;
 }
+
+.route {
+    stroke-width: 0;
+}
+
+.place-label {
+    font-size: 5px;
+}
