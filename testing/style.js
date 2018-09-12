@@ -5,6 +5,7 @@ const projection = d3.geo.albers().center([17.4, 22]);
 
 const counties = svg.append("g").attr("class", "counties");
 const coc = svg.append("g").attr("class", "coc");
+const text_area = svg.append("g").attr("class", "text-area");
 
 function createMap() {
 
@@ -30,18 +31,28 @@ function createMap() {
 	svg.append("circle").attr("class", "dot")
 	    .attr("transform", "translate(" + projection([-97.5247, 26.1285]) + ")")
 	    .attr("r", 1);		
+
+	text_area.append("rect").attr("x", projection([-101.8552, 33.5779])[0]).attr("y", projection([-101.8552, 33.5779])[1])
+	    .attr("class", "text-box")
+
+	text_area.append("rect").attr("x", projection([-94.0477, 33.4251])[0]).attr("y", projection([-94.0477, 33.4251])[1])
+	    .attr("class", "text-box")
+
+	text_area.append("rect").attr("x", projection([-97.5247, 26.1285])[0]).attr("y", projection([-97.5247, 26.1285])[1])
+	    .attr("class", "text-box")
+
 	
-	svg.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-101.8552, 33.5779]) + ")")
-	    .attr("dy", "-0.50em")
-	    .text("372 miles");
+	text_area.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-101.8552, 33.5779]) + ")")
+	    .attr("dy", "-0.70em")
+	    .text("372 miles (5.8 hours)");
 
-	svg.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-94.0477, 33.4251]) + ")")
-	    .attr("dy", "-0.50em")
-	    .text("374 miles");
+	text_area.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-94.0477, 33.4251]) + ")")
+	    .attr("dy", "-0.70em")
+	    .text("374 miles (5.7 hours)");
 
-	svg.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-97.5247, 26.1285]) + ")")
-	    .attr("dy", "-0.50em")
-	    .text("340 miles");
+	text_area.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-97.5247, 26.1285]) + ")")
+	    .attr("dy", "-0.70em")
+	    .text("340 miles (5.2 hours)");
 
 	
 	setInterval(function() {

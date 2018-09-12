@@ -24,3 +24,12 @@
 .place-label {
     font-size: 5px;
 }
+
+.text-box {
+    transform: translate(-0.1em, -0.55em);
+    width: 45px;
+    height: 7px;
+    fill: white;
+    stroke-width: 0.5px;
+    stroke: black;
+}
