@@ -61,7 +61,7 @@ function createMap() {
 		.attr("transform", "translate(" + projection([-97.7431, 30.2672]) + ")")
 		.attr("r", 1)
 		.style("stroke-width", 1)
-		.style("stroke", "red")
+		.style("stroke", "white")
 		.transition()
 		.ease("linear")
 		.duration(6000)
