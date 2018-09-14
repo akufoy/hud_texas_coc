@@ -68,11 +68,11 @@ function createMap() {
 
 	text_area.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-97.5247, 26.1285]) + ")")
 	    .attr("dy", "-0.70em")
-	    .text("340 miles (5.2 hours)");
+	    .text("350 miles (5.2 hours)");
 
 	text_area.append("text").attr("class", "label-city").attr("transform", "translate(" + projection([-97.5247, 26.1285]) + ")")
 	    .attr("dy", "-1.70em")
-	    .text("McAllen:");
+	    .text("Brownsville:");
 
 	
 	setInterval(function() {
