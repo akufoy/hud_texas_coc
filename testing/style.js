@@ -34,6 +34,11 @@ function createMap() {
 
 	text_area.append("rect").attr("x", projection([-97.7431, 30.2672])[0]).attr("y", projection([-97.7431, 30.2672])[1])
 	    .attr("class", "austin-text-box")
+
+	text_area.append("text").attr("class", "label-city").attr("transform", "translate(" + projection([-97.7431, 30.2672]) + ")")
+	    .attr("dy", "-1.9em")
+	    .text("Austin");
+
 	
 	text_area.append("rect").attr("x", projection([-101.8552, 33.5779])[0]).attr("y", projection([-101.8552, 33.5779])[1])
 	    .attr("class", "text-box")
@@ -49,7 +54,7 @@ function createMap() {
 	    .attr("dy", "-0.70em")
 	    .text("372 miles (5.8 hours)");
 
-	text_area.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-101.8552, 33.5779]) + ")")
+	text_area.append("text").attr("class", "label-city").attr("transform", "translate(" + projection([-101.8552, 33.5779]) + ")")
 	    .attr("dy", "-1.70em")
 	    .text("Lubbock:");
 
@@ -57,7 +62,7 @@ function createMap() {
 	    .attr("dy", "-0.70em")
 	    .text("374 miles (5.7 hours)");
 
-	text_area.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-94.0477, 33.4251]) + ")")
+	text_area.append("text").attr("class", "label-city").attr("transform", "translate(" + projection([-94.0477, 33.4251]) + ")")
 	    .attr("dy", "-1.70em")
 	    .text("Texarkana:");
 
@@ -65,7 +70,7 @@ function createMap() {
 	    .attr("dy", "-0.70em")
 	    .text("340 miles (5.2 hours)");
 
-	text_area.append("text").attr("class", "place-label").attr("transform", "translate(" + projection([-97.5247, 26.1285]) + ")")
+	text_area.append("text").attr("class", "label-city").attr("transform", "translate(" + projection([-97.5247, 26.1285]) + ")")
 	    .attr("dy", "-1.70em")
 	    .text("McAllen:");
 

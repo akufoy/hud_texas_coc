@@ -25,9 +25,14 @@
     font-size: 5px;
 }
 
+.label-city {
+    font-size: 5px;
+    font-weight: bold;
+}
+
 .text-box {
     transform: translate(-0.1em, -0.8em);
-    width: 45px;
+    width: 43.5px;
     height: 11px;
     fill: white;
     stroke-width: 0.5px;
@@ -36,8 +41,8 @@
 
 .austin-text-box {
     transform: translate(-0.1em, -0.9em);
-    width: 45px;
-    height: 11px;
+    width: 17.25px;
+    height: 6px;
     fill: white;
     stroke-width: 0.5px;
     stroke: black;
