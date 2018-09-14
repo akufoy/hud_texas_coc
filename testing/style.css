@@ -26,9 +26,18 @@
 }
 
 .text-box {
-    transform: translate(-0.1em, -0.55em);
+    transform: translate(-0.1em, -0.8em);
     width: 45px;
-    height: 7px;
+    height: 11px;
+    fill: white;
+    stroke-width: 0.5px;
+    stroke: black;
+}
+
+.austin-text-box {
+    transform: translate(-0.1em, -0.9em);
+    width: 45px;
+    height: 11px;
     fill: white;
     stroke-width: 0.5px;
     stroke: black;
