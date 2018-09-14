@@ -21,6 +21,12 @@
     stroke-width: 0;
 }
 
+.driving-route {
+    stroke-width: 0.5px;
+    stroke: black;
+    fill: none;
+}
+
 .place-label {
     font-size: 5px;
 }
